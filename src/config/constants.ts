@@ -17,6 +17,8 @@ export const API_KEY_CONFIG = {
 } as const;
 
 export const AVAILABLE_MODELS = {
+  'uiui/gpt-image-2':
+    'OpenAI GPT-2 Image — highest quality general-purpose image generation.',
   'openai/gpt-5-image':
     'OpenAI GPT-5 Image — highest quality general-purpose image generation.',
   'openai/gpt-5-image-mini':
@@ -29,7 +31,7 @@ export const AVAILABLE_MODELS = {
 
 export type ModelId = keyof typeof AVAILABLE_MODELS;
 
-export const DEFAULT_MODEL = 'gpt-image-2';
+export const DEFAULT_MODEL = 'uiui/gpt-image-2';
 export const MODEL_IDS = Object.keys(AVAILABLE_MODELS) as ModelId[];
 
 export const FILE_CONFIG = {
