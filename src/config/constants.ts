@@ -4,7 +4,7 @@
  */
 
 export const API_CONFIG = {
-  BASE_URL: 'https://openrouter.ai/api/v1',
+  BASE_URL: 'https://sg.uiuiapi.com/v1',
   REFERER: 'https://github.com/openrouter-image-gen-mcp',
   APP_TITLE: 'OpenRouter Image Generation MCP Server',
   TIMEOUT_MS: 30000,
@@ -29,7 +29,7 @@ export const AVAILABLE_MODELS = {
 
 export type ModelId = keyof typeof AVAILABLE_MODELS;
 
-export const DEFAULT_MODEL: ModelId = 'google/gemini-2.5-flash-image-preview';
+export const DEFAULT_MODEL = 'gpt-image-2';
 export const MODEL_IDS = Object.keys(AVAILABLE_MODELS) as ModelId[];
 
 export const FILE_CONFIG = {
