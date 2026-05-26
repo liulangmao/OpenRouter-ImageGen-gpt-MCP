@@ -4,7 +4,7 @@
  */
 
 export const API_CONFIG = {
-  BASE_URL: 'https://sg.uiuiapi.com/v1',
+  BASE_URL: 'https://sg.uiuiapi.com',
   REFERER: 'https://github.com/openrouter-image-gen-mcp',
   APP_TITLE: 'OpenRouter Image Generation MCP Server',
   TIMEOUT_MS: 30000,
