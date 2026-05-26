@@ -21,7 +21,7 @@ export class ApiClient {
    */
   async generateImage(prompt: string, model: ModelId): Promise<OpenRouterResponse> {
     try {
-      const response = await fetch(`${API_CONFIG.BASE_URL}/chat/completions`, {
+      const response = await fetch(`${API_CONFIG.BASE_URL}/images/generations`, {
         method: 'POST',
         headers: this.buildHeaders(),
         body: JSON.stringify(this.buildRequestBody(prompt, model)),
